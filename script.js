@@ -84,6 +84,7 @@ Terrain.prototype.update = function () {
 bgCtx.fillStyle = '#05004c';
 bgCtx.fillRect(0, 0, width, height);
 
+
 // stars
 function Star(options) {
     this.size = Math.random() * 2;
@@ -191,18 +192,25 @@ const nameHead = $(".head")
 const nameSinger = $(".singer-name")
 const photo = $("#img")
 const playList = [
+    
+    {
+        src:"./mp3/TinhYeuDepNhat.mp3",
+        nameSong: " Tình Yêu Đẹp Nhất ",
+        singer: "MR.SIRO VERSION",
+        img: "https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/covers/9/2/9232c4c99c30f665e9326c8bbbcebc0e_1468491280.jpg"
+
+    },
+    {
+        src:"./mp3/NoiNayCoAnh.mp3",
+        nameSong: " Nơi Này Có Anh ",
+        singer: " Sơn Tùng M-TP ",
+        img: "https://i.ytimg.com/vi/FN7ALfpGxiI/maxresdefault.jpg"
+    },
     {
         src:"./mp3/CuChillThoi.mp3",
         nameSong: "Cứ Chill Thôi ",
         singer: "Chillies ft Suni Hạ Linh & Rhymastic",
-        img: "https://lyrics-hot.com/wp-content/uploads/2021/02/loi-bai-hat-cu-chill-thoi-640.jpg"
-    },
-    {
-        src:"./mp3/XeDap.mp3",
-        nameSong:" Xe Đạp ",
-        singer: "CM1X",
-        img: "https://i.ytimg.com/vi/3v3YYpVrEuA/maxresdefault.jpg"
-
+        img: "https://kenh14cdn.com/crop/640_360/pr/2020/1594530506898-811-63-2000-1966-crop-1594530520629-63730152651655.jpg"
     },
     {
         src:"./mp3/MuonRuouToTinh.mp3",
@@ -342,13 +350,6 @@ const playList = [
         nameSong:"Yêu Một Người Có Lẽ",
         singer: " Lou Hoàng - Miu Lê",
         img: "https://i.ytimg.com/vi/w2DBMrXJDIo/sddefault.jpg"
-
-    },
-    {
-        src:"./mp3/LegendsNeverDie.mp3",
-        nameSong:"Legends Never Die",
-        singer: " Against The Curent-World 2017",
-        img: "https://i.ytimg.com/vi/r6zIGXun57U/maxresdefault.jpg"
 
     },
 ]
